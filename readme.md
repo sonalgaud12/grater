@@ -1,5 +1,5 @@
 ```bash 
-Note: This project is my propsal for open telemetry project for lfx spring'26 ( you can find the listed issue here: open-telemetry/opentelemetry-go-build-tools/issues/1528 )
+Note: This project is my proposal for open telemetry project for lfx spring'26 ( you can find the listed issue here: open-telemetry/opentelemetry-go-build-tools/issues/1528 )
 ```
 
 ### Grater
