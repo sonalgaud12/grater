@@ -73,7 +73,7 @@ func (r *Runner) RunAll(opts Options) (*models.TestSuiteResults, error) {
 	return results, nil
 }
 
-func (r *Runner) runDependentTest(dep models.Dependent, targetModule, targetVersion string) *models.TestResult {
+func (r *Runner) runDependentTest(dep models.Dependent, _, _ string) *models.TestResult {
 	start := time.Now()
 	result := &models.TestResult{
 		Module: dep.Path,

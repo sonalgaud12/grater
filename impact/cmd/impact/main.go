@@ -22,7 +22,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "depimpact",
+	Use:   "impact",
 	Short: "Analyze the impact of changes on downstream Go dependencies",
 	Long: `A tool to help Go library maintainers understand the impact of changes
 on downstream consumers by running test suites and comparing results.`,
@@ -55,7 +55,7 @@ func init() {
 
 	testCmd.Flags().StringVarP(&outputFile, "output", "o", "results.json", "Output file for test results")
 	testCmd.Flags().IntVarP(&timeout, "timeout", "t", 300, "Timeout per test in seconds")
-	testCmd.Flags().StringVarP(&workDir, "workdir", "w", "/tmp/depimpact", "Working directory for cloning repos")
+	testCmd.Flags().StringVarP(&workDir, "workdir", "w", "/tmp/impact", "Working directory for cloning repos")
 	testCmd.Flags().StringVarP(&dependentsFile, "dependents", "d", "dependents.json", "File containing list of dependents")
 
 	compareCmd.Flags().StringVarP(&outputFile, "output", "o", "comparison.json", "Output file for comparison report")
